@@ -1,4 +1,4 @@
-# Udacity Data Science Couse Capstpone
+# Udacity Data Science Course Capstpone
 
 ## Dog Breeding Identification Project
 
@@ -85,5 +85,25 @@ The idea now is to create a Application by myself. So, taken a pre-trained Class
 
 3. two of the "humans" didn´t pass in the **human** test. One was a picture from **Werewolf**, a 1995 movie and for (**obvious**!) reasons, the monster was **not** interpreted as a human! The other one was my own picture and the most likely reason is that it is a so **distorted** pic, taken with my old webcam, and so **badly** reshaped for 224x224 image that the Perceptron could not recognize it as a human. OK, I can pass with this idea!  
 
-3. o 
+---
+
+### Involved files:
+
+- the `dogg_app.ipynb` is the most important file involvend in this project.
+
+- if you really want to run it, you will need a computer with `Jupyter Notebook` pre-installed and an active **GPU** to run it;
+
+- the other files that are not provided in this **GitHub**, you will need to donwload them from the propper sources, in a way to run this project.
+
+---
+
+### Versions:
+
+- 0.1-0.2 $\rightarrow$ october, november 2021
+
+- 1.0 $\rightarrow$ novemer, 27, 2021
+
+... (a bunch of mistakes corrected)
+
+- 1.4 $\rightarrow$ december, 10, 2021
 
