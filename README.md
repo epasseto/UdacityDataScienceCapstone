@@ -2,7 +2,8 @@
 
 ## Dog Breeding Identification Project
 
-#### Objective:
+
+### Project Overview
 
 The main idea to this project is to have contact with **Perceptrons** technology.
 
@@ -14,9 +15,9 @@ The task proposed by **Udacity** as Capstone for **Data Science Nanodegree** was
 
 Udacity provided for this project, a **Jupyter Notebook** and **Extra Classes** as part of the learning process. The programming language involved is **Python**, and also some specific libraries, as **Pandas** (for dataframes opperations), **Keras** (for Deep Learning machines), and **Numpy** (for mathematica/geometrical operations), just to cite some of them.
 
----
+### Problem Statement
 
-## Metodology
+The scope of the project is to Train/Test Perceptrons for **Face Recognition** and test the possibility to transform them to **Dog Recognition**. Later, to train them for **Dog Breed Recognition**. And finally, creating a general Perceptron for, given an image, telling it there was a **human** there, or a **dog**, or neither a **human or dog**. And as an add, if a **human** face was found, to give a guess, if it was a **dog**, what dog breed is more similar to it.
 
 Udacity metodology is strongly inspired by the formula **DCR** (**Drive, Correct, Repeat**). This small acronym refers for the learning process involved in training a new car driver:
 
@@ -25,6 +26,88 @@ Udacity metodology is strongly inspired by the formula **DCR** (**Drive, Correct
 > - third, you will be oriented to try again, and again, until you achieve the necessary **expertise** for driving a car by yourself (**Repeat**).
 
 As an **analogy** to learning how to drive a car, some explanation is given in an **incomplete** Jupyter Notebook. Explanatory notes will be found in all your learning process. And if you stuck in some point, you can as for **Mentor** help. I made it a lot of times. And having a **Mentor** (not quite a **Mentat**, like you can see in this Sci-Fi movie **Dune** - 2021) is really a good thing, when you are lost in a forest of **Coding** trees!
+
+### Metrics
+
+The project metric was **Accuracy**. Data was splitted into **Train**, **Validation** and **Testing**, for avoid contamination of the Perceptron metrics. The **Test Accuracy** is the main metric for this project. 
+
+### Data Exploration
+
+The main data source for this project is **OpenCVs Implementation of Haar Feature-based Cascade Classifiers** for face recognition. In our Jupyter Notebook, it corresponds to:
+
+- Step 1: Detect Humans
+
+- Step 2: Detect Dogs
+
+### Data Visualization
+
+My input data is faces and dogs images, in **.jpg** files, in size 224x224, RGB. To visuallize them, I just load the pictures that I need to visuallize in my Jupyter Notebook, using:
+
+`pic_link = '/home/workspace/dog-project/images/Albert_Einstein_Wiki.jpg'`
+
+`img = load_img(pic_link, target_size=(224, 224))`
+
+`img`
+
+### Data Preprocessing
+
+Some techniques were used to preprocess my images files, as:
+
+- transforming them fom RGB to **Greyscale**;
+
+- resizing them to **224x224** pixels, when it is necessary;
+
+- transforming them into a **4D Tensor**, just to feed our **Perceptron**.
+
+*Observation: **Image Augmentation** was not tried in this project!*
+
+### Implementation
+
+- first, was tested a **face recognition** pre-trained Perceptron for a **human face** dataset;
+ 
+- then, was tested a **dog recoginition** pre-trained Perceptron for a **dog** dataset;
+
+- then, was crossed over **face recognition** with a **dog** dataset and;
+
+- **dog recognition with a **human face** dataset.
+
+The idea as to give a basic prime of **False Negatives** and **False Positives** in pre-trained Perceptrons.
+
+### Refinement
+
+- first was created **by-zero** a Perceptron, using Keras library. The perceptron was trained for dog breeding recognition;
+
+- next, was tested Perceptrons created using pre-trained Bottlenecks. The idea is to implement a Percetron using pre-trained first layers, with very accurate patterns, by exaustive training. What is expected is that using pre-trained Bottlenecks in some cases, can improve a lot our **Accuracy**.
+
+Then parameters were changed, using a `charge` function. Metrics were evaluated for each change, until we attained a reasonable Accuracy.
+
+### Model Evaluation and Validation
+
+The final model, an hybrid between a loaded Bottleneck was runned for Epochs to fit for our purpose of **dog breeding** identification. The original Bottleneck was pre-trained for **human face recognition**. Model was evaluated for **Accuracy** on Test dataset, with pictures never used in earlier phases of the process.
+
+### Justification
+
+Our best trained Perceptron attained as **75%** Accuracy. It is not so nice for professional projects, but we can use it for having some fun on **Dog Breed Classification**.
+
+One picture of a dog was tested, sucessfully in the Jupyter Notebook. Then we could implement the **last phase** of the project, that is to given an image, says if there is a dog, or human in this image, and say if it is a human, the most likely **dog breed**, if it was a **dog**.
+
+### Reflection
+
+It is not a so-deep project, as the main objective of this **Data Science Nanodegree** is not to train Perceptrons. For having some fun about how Perceptrons work, it is OK. We also not deal with **images** in my job.
+
+### Improvement
+
+A lot of parameters were **not** tested in the Perceptrons that I used in my project. For example, I could explore better:
+
+- changing the **Padding**;
+
+- changing the **pool_size**;
+
+- creating a **pre processing** phase, including **image augmentation**;
+
+- adding one more **Dense** layer at the end of my Perceptron.
+
+*Last note: I nearly **exausted** the GPU time, on Udacity workspace. Perhaps I will need more GPU time for doing more testings on these parameters. Perceptrons are a bit **complex**, so there are a lot of parameters to test!* 
 
 ---
 
