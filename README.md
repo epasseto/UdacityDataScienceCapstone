@@ -99,11 +99,11 @@ The idea now is to create a Application by myself. So, taken a pre-trained Class
 
 ### Versions:
 
-- 0.1-0.2 $\rightarrow$ october, november 2021
+- 0.1-0.2 → october, november 2021
 
-- 1.0 $\rightarrow$ novemer, 27, 2021
+- 1.0 → november, 27, 2021
 
 ... (a bunch of mistakes corrected)
 
-- 1.4 $\rightarrow$ december, 10, 2021
+- 1.4 → december, 10, 2021
 
