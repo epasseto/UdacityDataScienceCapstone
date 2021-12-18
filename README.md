@@ -290,6 +290,8 @@ Let me start this discussion presenting something that is not properly a metric,
 
 **Table1:** Confusion Matrix for the human identifier – no distortion/recomposition applied
 
+![project statement](figs/confusion_humans.png)
+
 Some discussion about this “**human**” identifier:
 
 > - one of the “humans” was a Vulcan (so, technically he is **not** a human). But if you consider that an actor dressed as a kind-of-elf “extraterrestrial” remains a human in his general aspect, the Perceptron identified Mr Spock/Leonard Nimoy really **well**;
@@ -302,6 +304,8 @@ I also tested to compress/decompress the other human/dog pictures, just to have 
 What I can say about this? In my opinion, our Perceptron is not so affected (if it is affected) by image deformation at some degree (turning 3x4 images into **square**). The same thing now for **Dogs**:
 
 **Table2:** Confusion Matrix for the dog identifier – no distortion/recomposition applied
+
+![project statement](figs/confusion_dogs.png)
 
 And about our dog identifier? It seemed to work **really well** over the shown images!
 
