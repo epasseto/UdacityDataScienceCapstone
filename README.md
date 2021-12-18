@@ -325,7 +325,7 @@ Specifically for this project, our **main flux** is:
 >  
 > **image\_checker** → **dog\_detector**
 >  
->   (also to…) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ **face\_detector**    → **resnet50\_dog\_pred**
+>   (also to…) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ **face\_detector**    → **resnet50\_dog\_pred**
 > 
 
 ---
