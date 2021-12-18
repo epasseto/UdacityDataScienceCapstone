@@ -160,7 +160,7 @@ When plotting a **Boxplot** on it, it shows to me see a very unbalanced data dis
 
 ![project statement](figs/dog_boxplot.png)
 
-(\*a **Swarm** Plot was added, just to show how clusters can be seen, specially on the **right** side of the graph, for Categories Counting.)
+*(\*a **Swarm** Plot was added, just to show how clusters can be seen, specially on the **right** side of the graph, for Categories Counting.)*
 
 And visually, our **Counting** distribution tells the same history:
 
