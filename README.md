@@ -1,7 +1,8 @@
 <head>
     <h1 align="center">Dog Breed Identification Project</h1>
-    <h2 align="center>Udacity Data Scientist Course</h2>
 </head>
+
+<h2 align="center>Udacity Data Scientist Course</h2>
 
 ### Capstone project
   
