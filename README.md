@@ -17,7 +17,7 @@ The main idea of this project is to Data Scientist students have contact with th
 
 So, basically, you show to a pre-trained Perceptron a picture, as that one of this guy over here (*no matter about rights about the image – it is myself!*):
 
-![img](images/myselfwerewolf.jpg)
+![myself as a werewolf](images/myselfwerewolf.jpg)
 
 And it will says something as:
 
@@ -41,6 +41,7 @@ With the evolution of computers, specially **GPU**s (Graphic Processor Units), t
 
 **I.1. Problem Statement**
 
+![project statement](figs/dogbreed1.pdf)
 
 The task proposed by Udacity is to make some experimentation involving Perceptrons. For example, we can use **three** pre-trained Perceptrons to have some fun with image classification. Just suppose that you already have a (224x224 RGB) picture of yourself, of of a dog, for example.
 
