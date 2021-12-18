@@ -321,12 +321,12 @@ My functions were also migrated to a library file named **dogbreed.py**. This li
 
 Specifically for this project, our **main flux** is:
 
-` `(starts here)
-` `
-` `**image\_checker** → **dog\_detector**
-` `
-` `  (also to…)           → **face\_detector** → **resnet50\_dog\_pred**
-` `
+' '(starts here)
+' '
+' '**image\_checker** → **dog\_detector**
+' '
+' '  (also to…)           → **face\_detector** → **resnet50\_dog\_pred**
+' '
 
 ---
 
