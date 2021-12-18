@@ -1,6 +1,6 @@
 <p allign="center">
-# Dog Breed Identification Project
-<\p>
+Dog Breed Identification Project
+</p>
   
 ## Udacity Data Scientist Course
 
