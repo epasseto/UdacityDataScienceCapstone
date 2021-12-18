@@ -372,9 +372,7 @@ Other auxiliary functions (not directly in use):
 
   - the data files that are not provided in this **GitHub**, you will need to donwload them from the propper sources, in a way to run this project;
 
-- `dog_breed_analysis.ipynb` → the complete **data analysis** for our Human / Dog images;
-
-- `Project_Main_Relatory` → all the documentation concerning this project (including proposition, steps to implement, metrics, etc..).
+- `dog_breed_analysis.ipynb` → the complete **data analysis** for our Human / Dog images.
 
 ---
 
