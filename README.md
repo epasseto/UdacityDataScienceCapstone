@@ -41,7 +41,7 @@ With the evolution of computers, specially **GPU**s (Graphic Processor Units), t
 
 **I.1. Problem Statement**
 
-![project statement](figs/dogbreed1.pdf)
+![project statement](figs/dogbreed1.png)
 
 The task proposed by Udacity is to make some experimentation involving Perceptrons. For example, we can use **three** pre-trained Perceptrons to have some fun with image classification. Just suppose that you already have a (224x224 RGB) picture of yourself, of of a dog, for example.
 
