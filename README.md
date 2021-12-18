@@ -4,7 +4,7 @@
     <h3 align="center">Capstone project</h3>
 </head>
 
-<p align="right"; style="font-style:italic";>by: Eduardo Passeto</p>
+<p align="right" style="font-style:italic">by: Eduardo Passeto</p>
 
 <p align="right">Udacian student</p>
 
