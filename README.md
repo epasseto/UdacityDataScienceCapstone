@@ -1,15 +1,7 @@
-<html>
 <head>
-<style>
-  h1 {text-align: center;}
-  p {text-align: center;}
-</style>
-</head>
-  <body>
-    <h1>Dog Breed Identification Project</h1>
+    <h1 align="center">Dog Breed Identification Project</h1>
     <p>Udacity Data Scientist Course</p>
-  </body>
-</html>
+</head>
 
 ### Capstone project
   
