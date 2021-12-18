@@ -153,7 +153,7 @@ What I observed was basically that our Dog Pictures data is really **unbalanced*
 
 And this can be seen by its Statistics **summary**:
 
-![project statement](figs/dog_count.png)
+![project statement](figs/dog_stat.png)
 
 
 When plotting a **Boxplot** on it, it shows to me see a very unbalanced data distribution, with long whiskers on both sides:
