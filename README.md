@@ -1,8 +1,4 @@
-<p align="center">
-  
-  # Dog Breed Identification Project
-
-</p>
+<p align="center"> # Dog Breed Identification Project </p>
   
 ## Udacity Data Scientist Course
 
