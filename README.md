@@ -1,4 +1,4 @@
-<p allign=center>
+<p allign="center">
 
 # Dog Breed Identification Project
 
