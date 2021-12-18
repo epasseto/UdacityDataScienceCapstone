@@ -82,7 +82,7 @@ Then, one more:
 
 - **Conv 2D Layer** + **Max Pooling 2D Layer** → output (None, 2, 2, 128)
 
--  And a **GAP Layer**, compressing and giving the adjustments to → output (None, 128), resulting on a **Dense Layer** (None, 133), with 17157 parameters, as the Output layer.
+- and a **GAP Layer**, compressing and giving the adjustments to → output (None, 128), resulting on a **Dense Layer** (None, 133), with 17157 parameters, as the Output layer.
 
 Slight variations from this CNN were also tried, with worse results (as to use 2 pixel-square kernels on CNN). The general project of a CNN is quite neat, and is given by a combination of Convolutional Layers, associated with Pooling Layers, to turn a short, wide and large input, into a long, compressed-to-1 classes vector.
 
@@ -120,11 +120,11 @@ Our problem is to take an image, run it into a Perceptron and retrieve the most 
 
 So, basically the thing that we will do (and this is valid for all the Perceptrons involved in this project) is to:
 
-> - load a picture;
-> - prepare this picture (croping it, removing things that are unnecessary, correcting defects, etc);
-> - pre-process the data inside of it (giving it a mathematical Tensor shape);
-> - feed a pre-trained Perceptron, taking back our result and;
-> - a human, to take a look into the results, and checking, if everything goes well, or not\*.
+> 1. load a picture;
+> 2. prepare this picture (croping it, removing things that are unnecessary, correcting defects, etc);
+> 3. pre-process the data inside of it (giving it a mathematical Tensor shape);
+> 4. feed a pre-trained Perceptron, taking back our result and;
+> 5. a human, to take a look into the results, and checking, if everything goes well, or not\*.
 
 *(\*or perhaps add some **metrics**, what we will discuss later)*
 
@@ -173,9 +173,9 @@ About Describe, what I found was a very **biased** data, with few pictures of a 
 
 And the **Boxplot** was so distorted in this case, that basically what we can see is only the **Swarmplot** of this basic:
 
-- 1-picture or 2-pictures individuals,
+>- 1-picture or 2-pictures individuals,
 
-- followed by so **heavy** outliers, one of them counting for 500+ pics.
+>- followed by so **heavy** outliers, one of them counting for 500+ pics.
 
 And that is what our **Counting** distribution shows, in another way, so we can see 4000+ individuals with only **one** picture, constrasted by some individuals with 144, 236, 530 pictures, so a **very biased** data source*
 
