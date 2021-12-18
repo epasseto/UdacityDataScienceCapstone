@@ -3,11 +3,11 @@
     <h2 align="center">Udacity Data Scientist Course</h2>
 </head>
 
-### Capstone project
-  
-*by: Eduardo Passeto*
+<p align="right">Capstone project</p>
 
-*Udacian student*
+<p align="right">by: Eduardo Passeto</p>
+
+<p align="right">Udacian student</p>
 
 ---
 
