@@ -1,4 +1,4 @@
-# Udacity Data Science Course Capstone
+<center> # Udacity Data Science Course Capstone </center>
 
 ## Dog Breeding Identification Project
 
