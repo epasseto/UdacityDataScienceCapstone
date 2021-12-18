@@ -1,6 +1,19 @@
-<p align="center"> # Dog Breed Identification Project </p>
-  
-## Udacity Data Scientist Course
+<html>
+<head>
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+</style>
+</head>
+<body>
+
+<h1>Dog Breed Identification Project/h1>
+<p>Udacity Data Scientist Course</p>
+<div>This is a div.</div>
+
+</body>
+</html>
 
 ### Capstone project
   
