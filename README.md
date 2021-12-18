@@ -19,9 +19,8 @@ So, basically, you show to a pre-trained Perceptron a picture, as that one of th
 
 And it will says something as:
 
-  *“Sorry, nothing detected!*
-
-  *…so, please check this image”*
+> *“Sorry, nothing detected!*
+> *…so, please check this image”*
 
 Or, in hope that it works, It will give a message like:
 
