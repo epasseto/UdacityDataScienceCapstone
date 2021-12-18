@@ -364,10 +364,6 @@ Other auxiliary functions (not directly in use):
 
 ---
 
-## Dog Breeding Identification Project
-
----
-
 ### Involved files:
 
 - `dogg_app.ipynb` →  the most important notebook file in this project, is where you can run the project and test it for results in new images classifications;
