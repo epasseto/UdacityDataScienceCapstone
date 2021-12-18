@@ -17,7 +17,7 @@ The main idea of this project is to Data Scientist students have contact with th
 
 So, basically, you show to a pre-trained Perceptron a picture, as that one of this guy over here (*no matter about rights about the image – it is myself!*):
 
-<img src="https:\\github.com\epasseto\UdacityDataScienceCapstone\blob\main\images\myselfwerewolf.jpg" width="800px" height="auto">
+<img src="e5kui\src\assets\img\launch\epassetoUdacityDataScienceCapstoneblobmainimagesmyselfwerewolf.jpg" width="800px" height="auto">
 
 And it will says something as:
 
