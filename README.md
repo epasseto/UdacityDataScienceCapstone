@@ -99,6 +99,8 @@ And this **quite crazy** idea could work? The answer is yes, and we could achiev
 
 A very illustrative process of evolving Perceptrons can be seen here:
 
+![project statement](figs/perceptrons.png)
+
 Source: [Research Gate](https://www.researchgate.net/publication/349432700_Deep_Learning_for_Biospectroscopy_and_Biospectral_Imaging_State-of-the-Art_and_Perspectives), article from Mr Hao He.
 
 What we are doing now, is to center our efforts on the Full Connection Layers, at the end of our new **Dog Breed Identifier** Perceptron, re-training it for the final layers and testing it for Metrics. This method is called **Transfer Learning**.
@@ -131,7 +133,9 @@ So, basically the thing that we will do (and this is valid for all the Perceptro
 
 *(\*or perhaps add some **metrics**, what we will discuss later)*
 
-In my concept, all this process will should look like:
+In my concept, all this process should look like:
+
+![project statement](figs/steps_for_solving.png)
 
 ---
 
@@ -149,14 +153,18 @@ What I observed was basically that our Dog Pictures data is really **unbalanced*
 
 And this can be seen by its Statistics **summary**:
 
+![project statement](figs/dog_count.png)
+
 
 When plotting a **Boxplot** on it, it shows to me see a very unbalanced data distribution, with long whiskers on both sides:
 
+![project statement](figs/dog_boxplot.png)
 
 (\*a **Swarm** Plot was added, just to show how clusters can be seen, specially on the **right** side of the graph, for Categories Counting.)
 
 And visually, our **Counting** distribution tells the same history:
 
+![project statement](figs/dog_count.png)
 
 So, basically we are training a Dog Breed Perceptron over an unbalanced data. As the main metric that we choose was **Accuracy** for **Testing** dataset, this biased training reflects also into our metrics, as this article from Towards Data Science indicates, about metrics, specially Accuracy:
 
@@ -174,12 +182,18 @@ Now we are showing some illustrative conclusions about Humans dataset. And it lo
 
 About Describe, what I found was a very **biased** data, with few pictures of a lot of individuals and a lot of pictures of a small group of individuals:
 
+![project statement](figs/human_stat.png)
+
 And the **Boxplot** was so distorted in this case, that basically what we can see is only the **Swarmplot** of this basic:
+
+![project statement](figs/human_boxplot.png)
 
 >- 1-picture or 2-pictures individuals,
 >- followed by so **heavy** outliers, one of them counting for 500+ pics.
 
-And that is what our **Counting** distribution shows, in another way, so we can see 4000+ individuals with only **one** picture, constrasted by some individuals with 144, 236, 530 pictures, so a **very biased** data source*
+And that is what our **Counting** distribution shows, in another way, so we can see 4000+ individuals with only **one** picture, constrasted by some individuals with 144, 236, 530 pictures, so a **very biased** data source*:
+
+![project statement](figs/human_count2.png)
 
 *(\*these guys, counting “21”, then “23”… and so on until “530” cannot be represented by a bar, as they are only **unary** – one individual value.)*
 
