@@ -1,12 +1,10 @@
 <p allign="center">
-
 # Dog Breed Identification Project
-
+<\p>
+  
 ## Udacity Data Scientist Course
 
 ### Capstone project
-
-<\p>
   
 *by: Eduardo Passeto*
 
