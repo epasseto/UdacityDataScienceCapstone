@@ -8,7 +8,7 @@ div {text-align: center;}
 </head>
 <body>
 
-<h1>Dog Breed Identification Project/h1>
+<h1>Dog Breed Identification Project</h1>
 <p>Udacity Data Scientist Course</p>
 <div>This is a div.</div>
 
