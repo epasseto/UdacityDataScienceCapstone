@@ -6,7 +6,7 @@
 
 <p align="right"><i>by: Eduardo Passeto</i></p>
 
-<p align="right">Udacian student</p>
+<p align="right"><i>Udacian student</i></p>
 
 ---
 
