@@ -19,19 +19,19 @@ So, basically, you show to a pre-trained Perceptron a picture, as that one of th
 
 And it will says something as:
 
-*“Sorry, nothing detected!*
+  *“Sorry, nothing detected!*
 
-`	`*…so, please check this image”*
+  *…so, please check this image”*
 
 Or, in hope that it works, It will give a message like:
 
-`	`*“I detected something that looks like a human*
+  *“I detected something that looks like a human*
 
-`	`*...and if you were a dog, your breed should be  Siky Terrier!”*
+  *...and if you were a dog, your breed should be  Siky Terrier!”*
 
 Alternatively, if the Perceptron identifies this as a dog, it will show something as:
 
-`	`*“I detected something that looks like a dog”*
+  *“I detected something that looks like a dog”*
 
 The theoretical concepts involved in **Perceptron** technology are not so new. I fact, an american scientist named **Frank Rosenblatt** was evolving that was known as the first Perceptron in the history, in 1958, for military applications. (Source: [Wikipedia](https://en.wikipedia.org/wiki/Perceptron))
 
