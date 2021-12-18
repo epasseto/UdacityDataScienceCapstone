@@ -1,9 +1,8 @@
 <head>
     <h1 align="center">Dog Breed Identification Project</h1>
     <h2 align="center">Udacity Data Scientist Course</h2>
+    <h3 align="right">Capstone project</h3>
 </head>
-
-<p align="right">Capstone project</p>
 
 <p align="right">by: Eduardo Passeto</p>
 
