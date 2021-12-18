@@ -174,7 +174,6 @@ About Describe, what I found was a very **biased** data, with few pictures of a 
 And the **Boxplot** was so distorted in this case, that basically what we can see is only the **Swarmplot** of this basic:
 
 >- 1-picture or 2-pictures individuals,
-
 >- followed by so **heavy** outliers, one of them counting for 500+ pics.
 
 And that is what our **Counting** distribution shows, in another way, so we can see 4000+ individuals with only **one** picture, constrasted by some individuals with 144, 236, 530 pictures, so a **very biased** data source*
