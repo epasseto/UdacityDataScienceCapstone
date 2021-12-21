@@ -15,6 +15,8 @@
 
 The main idea of this project is to Data Scientist students have contact with the **Perceptron** technology. Udacity course for Data Science is an immersive course about how to deal and enhance data, in a lot of ways, as building **ETL**s, **Machine Learning Classifiers and Regressors**, and a lot of other techniques. As extra-classes, we can find material to deal and to build a **Deep Learning** Classifier.
 
+[my GitHub repo](https://github.com/epasseto/UdacityDataScienceCapstone)
+
 So, basically, you show to a pre-trained Perceptron a picture, as that one of this guy over here (*no matter about rights about the image – it is myself!*):
 
 ![myself as a werewolf](images/myselfwerewolf.jpg)
