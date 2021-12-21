@@ -73,31 +73,7 @@ random.seed(8675309)
 #altered 2021-12-13
 ###Dog Breed Project###########s################################################
 #########1#########2#########3#########4#########5#########6#########7#########8
-def load_dataset(path):
-    '''
-    This function loads the dataset containing images and labels. It loads the
-    Train, Test and Validation daasets.
-    
-    Special note: this function is STRONGLY based on Udacity notebook for Dog
-    Breed Classifications, for completing the Capstone Project for Data Scientist
-    course. It may be used for educational purposes only!
-    
-    Inputs:
-    - path (mandatory) - a string containing the path for loading the data
-    
-    Outputs:
-    - dog_files
-    - dog_targets
-    '''
-    data = load_files(path)
-    
-    dog_files = np.array(data['filenames'])
-    dog_targets = to_categorical(np.array(data['target']), 133)
-    
-    return dog_files, dog_targets
-    
-#########1#########2#########3#########4#########5#########6#########7#########8
-def load_dataset2(path, 
+def load_dataset(path, 
                  verbose=False):
     '''
     This function loads datasets. Then it splits filenames into into a dataset
@@ -112,7 +88,6 @@ def load_dataset2(path,
     - path (mandatory) - a path for taking a picture - (text string)
     - verbose (optional) - if you want some verbosity under processing
       (default=False)
-
     
     Output:
     - dog_files
@@ -1258,16 +1233,18 @@ def fn_output_formula(features,
                       bias,
                       verbose=False):
     '''
-    This function takes...
+    This function takes some parameters and returns them evaluated on a Sigmoid
+    function
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 27 - Gradient Descend and
     may be used only for education purposes.
     
     Inputs:
-      - features (mandatory) -
-      - weights (mandatory) -
-      - bias (mandatory) -
+      - features (mandatory) - a list with the features fixed values (Float)
+      - weights (mandatory) - a list with the weights of the values (Float)
+        *freatures and weights must have the same size!
+      - bias (mandatory) - a bias, for dislocation of the zero (if necessary)
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
@@ -1281,12 +1258,13 @@ def fn_output_formula(features,
         
     start = time()
     
+    #makes the dot product beweeen features and weights, adding the bias
+    #for a final value
     x_val = np.dot(features, weights) + bias
     output = fn_sigmoid(
                  x=x_val,
                  verbose=verbose
     )
-
     end = time()
 
     if verbose:
@@ -1300,19 +1278,20 @@ def fn_error_formula(y,
                      output,
                      verbose=False):
     '''
-    This function takes...
+    This function takes a y value and a actual output and returns the y-error.
+    It evaluates under Log function.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 27 - Gradient Descend and
     may be used only for education purposes.
     
     Inputs:
-      - y (mandatory) -
-      - output (mandatory) -
+      - y (mandatory) - the y predicted value to be evaluated (Float)
+      - output (mandatory) - the actual value, from the model (Float)
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - he difference (the error) between predicted and actual values
     '''
     if verbose:
         print('###function error formula started')
@@ -1322,7 +1301,7 @@ def fn_error_formula(y,
 
     start = time()
 
-    error = -y*np.log(output) -(1-y) * np.log(1-output)
+    error = -y * np.log(output) - (1-y) * np.log(1-output)
 
     end = time()
 
@@ -1340,21 +1319,23 @@ def fn_update_weights(x,
                       learnrate,
                       verbose=False):
     '''
-    This function takes...
+    This function takes x and y values and updates its values, based on a small
+    evaluation rate.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 27 - Gradient Descend and
     may be used only for education purposes.
     
     Inputs:
-      - x (mandatory) -
-      - y (mandatory) -
-      - weights (mandatory) -
-      - learnrate (mandatory) -
+      - x (mandatory) - x values for entry
+      - y (mandatory) - y values for entry
+      - weights (mandatory) - the respective weights
+      - learnrate (mandatory) - a fraction of the difference only (so it will be
+        a small step, just to not destabilize our model.
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - returns the updated weights for our new model, plus the new bias
     '''
     if verbose:
         print('###function update weights started')
@@ -1391,7 +1372,8 @@ def fn_plot_points(X,
                    prepare=False,
                    verbose=False):
     '''
-    This function takes...
+    This is only a plotting function! You give some data (and sometimes some
+    parameters) and it plots it for you. In this case, it is a Scatter Plot!
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 27 - Gradient Descend and
@@ -1407,7 +1389,7 @@ def fn_plot_points(X,
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - True, if everything goes well
     '''
     if verbose:
         print('###function plot points started')
@@ -1455,20 +1437,20 @@ def fn_display(m,
                color='g--',
                verbose=False):
     '''
-    This function takes...
+    This is a plotting function only! It plots a line segment, given parameters
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 27 - Gradient Descend and
     may be used only for education purposes.
     
     Inputs:
-      - m (mandatory) -
-      - b (mandatory) -
-      - color (optional)
+      - m (mandatory) - is the m * x parameter for a line
+      - b (mandatory) - is the b parameter for a line
+      - color (optional) - color for the graph (string, default='g--' -> green)
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - True, if everything runs well
     '''
     if verbose:
         print('###function display started')
@@ -1488,7 +1470,6 @@ def fn_display(m,
         m*x+b,
         color
     )
-
     end = time()
 
     if verbose:
@@ -1501,19 +1482,19 @@ def fn_cross_entropy(Y,
                      P,
                      verbose=False):
     '''
-    This function takes...
+    This function takes calculates the cross-entropy for model optiomization.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 21 - Cross Entropy and
     may be used only for education purposes.
     
     Inputs:
-      - Y (mandatory) - the error
-      - P (mandatory) -
+      - Y (mandatory) - the error parameter (Integer or Float)
+      - P (mandatory) - the probability parameter (Integer of Float)
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - returns the cross_entropy of positive and negative terms
     '''
     if verbose:
         print('###function cross entropy started')
@@ -1539,18 +1520,18 @@ def fn_cross_entropy(Y,
 def fn_softmax1(L,
                 verbose=False):
     '''
-    This function takes...
+    This function is a SoftMax evaluation function.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 16 - Softmax and may be
     used only for education purposes.
     
     Inputs:
-      - L (mandatory) -  
+      - L (mandatory) - takes a list of elements (Python List)
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - returns a list of evaluated values for each element
     '''
     if verbose:
         print('###function softmax version 1 started')
@@ -1576,18 +1557,18 @@ def fn_softmax1(L,
 def fn_softmax2(L,
                 verbose=False):
     '''
-    This function takes...
+    This function is the second version of SoftMax.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 16 - Softmax and may be 
     used only for education purposes.
     
     Inputs:
-      - L (mandatory)  -
+      - L (mandatory) - a element to be evaluated (Float)
       - verbose (optional) - if you want some verbosity during the process,
         please turn it on (default=False)
     Outputs:
-      -
+      - an evaluated value (Float)
     '''
     if verbose:
         print('###function softmax version 2 started')
@@ -1642,7 +1623,9 @@ def fn_sigmoid(x,
 #########1#########2#########3#########4#########5#########6#########7#########8
 def fn_stepFunction(t,
                     verbose=False):
-    '''This function...
+    '''This is a step function. If a number is positive, it returns itself. It
+    is negative, it returns zero (noise is taken off). It is a very fast
+    evaluation method, but not so precise!
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 5 - Equation for a line 
@@ -1669,7 +1652,8 @@ def fn_prediction(X,
                   W, 
                   b,
                   verbose=False):
-    '''This function...
+    '''This function makes a prediction for a model and gives the step to be
+    followed, for the next model, to a new Epoch.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 5 - Equation for a line 
@@ -1688,8 +1672,10 @@ def fn_prediction(X,
 
     start = time()
     
+    #multiplying params for a hyperspace line
     t = (np.matmul(X,W)+b)[0]
 
+    #calling the step function
     prediction = fn_stepFunction(
         t=t,
         verbose=verbose
@@ -1709,7 +1695,7 @@ def fn_perceptronStep(X,
                       b, 
                       learn_rate=0.01,
                       verbose=False):
-    '''This function...
+    '''This function is the main perceptron step function.
     
     This function is strongly based on content from Udacity course Convolutional
     Neural Networks, Lesson 1 - Neural Networks, Class 5 - Equation for a line 
