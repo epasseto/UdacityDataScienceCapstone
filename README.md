@@ -133,7 +133,7 @@ So, basically the thing that we will do (and this is valid for all the Perceptro
 > 4. feed a pre-trained Perceptron, taking back our result and;
 > 5. a human, to take a look into the results, and checking, if everything goes well, or not\*.
 
-*(\*or perhaps add some **metrics**, what we will discuss later)*
+_(\*or perhaps add some **metrics**, what we will discuss later)_
 
 In my concept, all this process should look like:
 
@@ -340,13 +340,14 @@ Specifically for this project, our **main flux** is:
 
 - **emulate\_svga\_dist** (image preprocessing - optional)
 
-* decompress\_svga\_img** (image preprocessing - optional)
+- **decompress\_svga\_img** (image preprocessing - optional)
 
 ---
 
 **dog\_detector** can consume the services from:
 
 - **emulate\_svga\_dist** (image preprocessing - optional)
+
 - **decompress\_svga\_img** (image preprocessing – optional)
 
 ---
