@@ -350,7 +350,7 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 
 **III. Conclusion**
 
-![strategy](figs/table_zero.png)
+![strategy](figs/Table_zero.png)
 
 **R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
 
