@@ -330,11 +330,15 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 
 **4. Final Results**
 
-![project statement](figs/machine1.png)
+![machines](figs/machine1.png)
 
 **R**The final results are discussed in detail. Explain the exploration as to why some techniques worked better than others, or how improvements were made are documented.
 
+![strategy](figs/machine2.png)
+
 **R**It’s essential to show best scores achieved by each model in one place in a table.
+
+
 
 **R**It’s valuable to report model’s performance metric for all the class types  that can be generated as output.
 
