@@ -350,6 +350,8 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 
 **III. Conclusion**
 
+![strategy](figs/table_zero.png)
+
 **R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
 
 **R**It’s a good practice to provide summary of end to end analysis that you performed and the main things that you learnt while working on this project as insights that others can benefit from.
