@@ -145,6 +145,17 @@ In my concept, all this process should look like:
 
 A few words about Data Analysis involved in this project. We have a bunch of things to infer about the data (humans and dogs) that we are feeding ours Perceptrons in. There are so many details in these data, that it was necessary to create a second **Jupyter Notebook**, just for doing the necessary Data Analysis.
 
+---
+**R** Features and calculated statistics relevant to the problem have been reported and discussed related to the dataset, and a thorough description of the input space or input data has been made. Abnormalities or characteristics about the data or input that need to be addressed have been identified.
+
+**R** You can report the number of images present in the dataset that you have received.
+
+**R** It would be a good idea to show some of the sample images present in your dataset along with name of the breed available as label for training machine learning model.
+
+**R**You may also report through table or graph about how many number of samples of each breed type you have received in your dataset.
+
+---
+
 
 **About the Dog Dataset**
 
@@ -322,20 +333,27 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 ![project statement](figs/machine1.png)
 
 **R**The final results are discussed in detail. Explain the exploration as to why some techniques worked better than others, or how improvements were made are documented.
+
 **R**It’s essential to show best scores achieved by each model in one place in a table.
+
 **R**It’s valuable to report model’s performance metric for all the class types  that can be generated as output.
-**R**You could have also generated a confusion matrix to check between which two breed pairs the algorithm is most likely to get confused and make classification error. That **R**revelation can be followed by collecting more samples of those two classes for training the model.
+
+**R**You could have also generated a confusion matrix to check between which two breed pairs the algorithm is most likely to get confused and make classification error. That 
+
+**R**revelation can be followed by collecting more samples of those two classes for training the model.
 
 ---
 
 **III. Conclusion**
 
 **R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
+
 **R**It’s a good practice to provide summary of end to end analysis that you performed and the main things that you learnt while working on this project as insights that others can benefit from.
 
 ---
 
 **R**Discussion is made as to how at least one aspect of the implementation could be improved. Potential solutions resulting from these improvements are considered and compared/contrasted to the current solution.
+
 **R**Whenever working on data science projects, it’s always a good practice to share some ideas on how the model performance could be improved by commenting on the dataset or the algorithms that you used.
 
 ---
