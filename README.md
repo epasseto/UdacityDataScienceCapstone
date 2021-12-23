@@ -365,7 +365,21 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 
 **R**The final results are discussed in detail. Explain the exploration as to why some techniques worked better than others, or how improvements were made are documented.
 
+One idea is to use the ancient **Roman Empire** strategy, that is: "first **occupy**, then **reinforce**!"
+
+Jo, just imagine that this **orange box** over here is our already conceived first Perceptron architecture:
+
 ![strategy](figs/machine2.png)
+
+And what we are doing:
+
+>- first, we make a definition of what whe think is a **good** initial architecture for a Perceptron, to solve our problem
+>- ... then we compile it, train and test it for our predefinded main parameter (in this case is **Accuracy**)
+>- ... we can check other parameters, like **processing time** for training and testing, etc
+>- second, we change **one parameter at time**, and checks if the output does not degradate, and... if we could attain an **improvement** on the changing
+>- ... and we can continue this process, slowly, testing in one direction and another... until we realize that there is not a lot to improve, keeping this Paradigm*
+
+*(*I am using a term forged by the Epistemologis Thomas S. Kuhn, who wrote a book named "The Structure of Scientific Revolutions". The idea is when you conceive a kind of **skeleton** for a scientific experiment, if you cannot achieve an expected result with it, just evolving it, is better to change to another Paradigm (or our **skeleton** of a scientific theory)*
 
 **R**It’s essential to show best scores achieved by each model in one place in a table.
 
@@ -381,7 +395,16 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 
 **III. Conclusion**
 
+Table: our efforts to evolve a Perceptron for identify **dog breeds**, by zero:
+
 ![strategy](figs/table_zero.png)
+
+Some things that we can see by practic are:
+
+>- once the **architecture** of our deep learning device is defined, even the best effort do improve its Accuracy don´t make **magic**
+>- ... in other words, if **fundamental** to have a hard plan on creating a nice Perceptron architecture, only changing parameters does not compensate a bad conception
+>- ... and having **good pictures** for training, and making a hard effort in **Preprocessing** is really important to achieve a good final result
+>- even changing some fundamental parameters, like trying to train over **two** and not **three** convolutional layer, or changing **kernel size** form **2** to **4**, does not affect so much how our Perceptron is learning from the data
 
 **R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
 
