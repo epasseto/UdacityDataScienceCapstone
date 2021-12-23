@@ -146,6 +146,9 @@ In my concept, all this process should look like:
 A few words about Data Analysis involved in this project. We have a bunch of things to infer about the data (humans and dogs) that we are feeding ours Perceptrons in. There are so many details in these data, that it was necessary to create a second **Jupyter Notebook**, just for doing the necessary Data Analysis.
 
 ---
+
+![project statement](figs/dog_human.png)
+
 **R** Features and calculated statistics relevant to the problem have been reported and discussed related to the dataset, and a thorough description of the input space or input data has been made. Abnormalities or characteristics about the data or input that need to be addressed have been identified.
 
 **R** You can report the number of images present in the dataset that you have received.
