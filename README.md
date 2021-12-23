@@ -152,7 +152,7 @@ A few words about Data Analysis involved in this project. We have a bunch of thi
 
 **R** It would be a good idea to show some of the sample images present in your dataset along with name of the breed available as label for training machine learning model.
 
-**R**You may also report through table or graph about how many number of samples of each breed type you have received in your dataset.
+**R** You may also report through table or graph about how many number of samples of each breed type you have received in your dataset.
 
 ---
 
