@@ -150,17 +150,18 @@ A few words about Data Analysis involved in this project. We have a bunch of thi
 About the images. We have 58% more data from **humans** than from **dogs**. Also we can notice that in the case of **humans** there are no division between **breeds**.
 
 **Table 1**: proportion of data between dog and human
-![project statement](figs/dog_human.jpg)
+
+![project statement](figs/dog_human.png)
 
 Something to say about **dog breeds**. Dogs are more genetically diversified than humans. So, it is much harder for a Perceptron to learn about dogs, than to learn about humans. 
 
 For example, just think about a **English Mastiff** (source: Wikipedia):
 
-[Mastiff](figs/mastiff.png)
+![Mastiff](figs/mastiff.jpg)
 
 And then look kind of a **Poodle Toy** (source: Wikipedia):
 
-[Poodle Toy](figs/poodle_toy.jpg)
+![Poodle Toy](figs/poodle_toy.jpg)
 
 **R** Features and calculated statistics relevant to the problem have been reported and discussed related to the dataset, and a thorough description of the input space or input data has been made. Abnormalities or characteristics about the data or input that need to be addressed have been identified.
 
