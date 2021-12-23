@@ -163,6 +163,20 @@ And then look kind of a **Poodle Toy** (source: Wikipedia):
 
 ![Poodle Toy](figs/poodle_toy.jpg)
 
+What to say about how our Perceptron is training about **dogs**: 
+>- to **simplify** the things, just imagine that our dog breeds were completelely **balanced**
+>- so, for 133 different breeds, we will have kind of **50 images** for the dog Perceptron train about a **Poodle**
+>- ... and then **50 images** for **English Mastiff** and so on...
+
+On the side of humans, what we have:
+>- only **one** human breed, with kind of 10000 images just for our Perceptron learn how a human looks like!
+>- just imagine, for example (if you know something about this kind of **Shanara** Netflix series) that humans were divided in **5 races**...
+>- so, now you have **humans**, and **elves**, and **trolls**, and **dwarves** and... (OK, let´s take one more from **J.R.R. Token** books - **hobbits**
+>- now, for our mighty 10000 original human images, our new dataset will be **dissolved** (if it is really **balanced**) into 2000 images for **humans**, 2000 for **elves** and so on..
+>- only to illustrate what happens with our **dog** dataset
+
+So, it´s a kind of a so **disproportional** condition, that whe cannot **never** expect a good performance for **breed identification**, training with **so few images**
+
 **R** Features and calculated statistics relevant to the problem have been reported and discussed related to the dataset, and a thorough description of the input space or input data has been made. Abnormalities or characteristics about the data or input that need to be addressed have been identified.
 
 **R** You can report the number of images present in the dataset that you have received.
