@@ -419,6 +419,12 @@ Some things that we can see by practic are:
 >- ... and having **good pictures** for training, and making a hard effort in **Preprocessing** is really important to achieve a good final result
 >- even changing some fundamental parameters, like trying to train over **two** and not **three** convolutional layer, or changing **kernel size** form **2** to **4**, does not affect so much how our Perceptron is learning from the data
 
+And what to say about trying to improve the Accuracy for the **Test** dataset:
+>- as we can deal with a bunch of variables, what help us to describe something (as the cause of a disease, for example), so we perform a **sensibility analysis**
+>- we can do something similar to our Perceptron parameters, as the number of **filters** in a layer, or the **pool size**, etc, and keeping changing them a bit to see if that helps to improve our model
+>- I know it looks like a bit **empirical**, and another thing to do is kind of, going back to the **mathematical fundaments** that sustains all the Perceptron work and try to understand how the things are working together, in hope to find a kind of a new way to structure our Perceptron architecture
+>- normally both of these things are tried
+
 **R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
 
 **R**It’s a good practice to provide summary of end to end analysis that you performed and the main things that you learnt while working on this project as insights that others can benefit from.
