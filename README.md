@@ -381,9 +381,22 @@ And what we are doing:
 
 *(*I am using a term forged by the Epistemologis Thomas S. Kuhn, who wrote a book named "The Structure of Scientific Revolutions". The idea is when you conceive a kind of **skeleton** for a scientific experiment, if you cannot achieve an expected result with it, just evolving it, is better to change to another Paradigm (or our **skeleton** of a scientific theory)*
 
+---
+
+In the case of instead creating a Perceptron **from zero**, I just load the first pre-trained layers from a repository, what I will need to do is basically define the last layers, the Output layer and the parameters for each one. It is not a good practice to add so much layers on a perceptron, as:
+
+>- adding a new **Convolution** layer, with its respective **Pooling 2D** layer is kind of creating a new layer of more, and more **complex** filters. And complex filters can mean that now my Perceptron can interpret the patterns of **dog teeth** or **dog whiskers**, as well as trying to "understand" very complex patterns that are completely **meaningless**
+>- adding a new **Dense** layer means that I am addig a **new dimmension** on a **classification boundary** between different classes. So, for example, if something is working on a one-layer base, it will describre a bondary as something as a line `a x + b`. Adding a new **Dense** layer, will improve the degree of the boundary to `a x^2 + b x + c` and so on. What is the problem of just keep adding more terms to a **polynomial function**? Is that, the descriptive polynomial turns so complex that it can descrive so well the **training** boundary and returning a foolish description for the **testing** data, so it is **useless**
+>- addimg more layers can represent not a substantial improvement of the **Accuracy**, as we seen before, with a high computational cost! 
+
+The complement to the predefined **Bottleneck** is:
+
+>- one **Convolution** layer, with some filters (like 32 or 64) with an activation function, strides, padding parameters settings
+>- one **Pooling 2D** with a pool size and a padding parameters settings
+>- a **GAP** for a drastical dimentionality reduction and finally
+>- a **Output** with the 133 categories and an end activation function
+
 **R**It’s essential to show best scores achieved by each model in one place in a table.
-
-
 
 **R**It’s valuable to report model’s performance metric for all the class types  that can be generated as output.
 
