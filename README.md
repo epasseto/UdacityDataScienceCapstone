@@ -427,6 +427,10 @@ And what to say about trying to improve the Accuracy for the **Test** dataset:
 
 ---
 
+Table: training a Perceptron using pre-trained Bottlenecks as the first part of them:
+
+![strategy2](figs/table_one.png)
+
 About the parameters:
 
 >- **RM Sprop** (Keras documentation)[https://keras.io/api/optimizers/rmsprop/] → to introduce some **momentum** (in this case, a **plain** momentum) into the Optimizer. The idea is not to stuck our Optimizer at a **local minimal**, an artificial momentum increases at each step that our Optimizer keeps the same direction, overpassing an eventual local “obstacle”. It was adopted as default
