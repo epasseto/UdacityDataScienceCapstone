@@ -425,6 +425,33 @@ And what to say about trying to improve the Accuracy for the **Test** dataset:
 >- I know it looks like a bit **empirical**, and another thing to do is kind of, going back to the **mathematical fundaments** that sustains all the Perceptron work and try to understand how the things are working together, in hope to find a kind of a new way to structure our Perceptron architecture
 >- normally both of these things are tried
 
+---
+
+About the parameters:
+
+>- **RM Sprop** (Keras documentation)[https://keras.io/api/optimizers/rmsprop/] → to introduce some **momentum** (in this case, a **plain** momentum) into the Optimizer. The idea is not to stuck our Optimizer at a **local minimal**, an artificial momentum increases at each step that our Optimizer keeps the same direction, overpassing an eventual local “obstacle”. It was adopted as default
+>- **Loss Function** (Keras documentation)[https://keras.io/api/losses/probabilistic_losses/#categoricalcrossentropy-class] → the idea is to use as the base of our losses accounting the **Entropy** concept. Entropy is a widely used concept on Physics, and Mechanical Engineering to describe the amount of confusion present in a part of a system. It you can move in the direction of **maximum energy dissipation**, theoretically you are following the best descent gradient too, It was adopted as default
+>- **Batch Size** → a more obvious parameter. We can train each Model for all the samples and it takes a **lot** of processing time. What people discovered training Perceptrons is that if you show to the Perceptron some, but not all the training pictures, as the steps are **small**, it don´t matter so much. The only thing that you may care about is that you need to show each Epoch, pictures taken by **random** (so your Perceptron will not be biased), it was adopted as 20
+>- **Epochs** → is the maximum number of Models that you will run. Each small step takes a new model. The training time is directly dependent on the number of Epochs you choose,  so it is is a kind of a transaction between not choosing too much Epochs for training your Perceptron, and not choosing too few of them, as we could´n explore so well the possibilities. As using **batch size** parameter turns each model a bit more **imprecise**, it may be a good idea not using so few Epochs, and it was adopted to be 20
+
+Other parameters that we can modify:
+>- **Bottlenecks** → each Bottleneck has it own architecture and may be trained with different data. We started with **ResNet-50** and then tried some of our tests on  **Inception V3**. The differences were not so great, and **ResNet-50** offered better results;
+
+For the **Convolutional Layer**:
+>- **Number of Filters** → **32** **64**
+>- **Kernel Size** → **4**
+>-**Pool Size** → **4**
+>- **Padding** → **same** **valid**
+>- **Stride** → **2**
+>- **Activation Function** → ReLU
+>- **Final Activation Function** → **Sigmoid ** **Softmax**
+
+And about **Training Time**:
+>-
+
+About **Accuracy**:
+>-
+
 **R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
 
 **R**It’s a good practice to provide summary of end to end analysis that you performed and the main things that you learnt while working on this project as insights that others can benefit from.
