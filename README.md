@@ -623,13 +623,20 @@ About **Accuracy**:
 
 ---
 
-**R**Discussion is made as to how at least one aspect of the implementation could be improved. Potential solutions resulting from these improvements are considered and compared/contrasted to the current solution.
+So, how could we pass from kind of **16%** of Accuracy under Test data to near to **80%**? Just taking a pre-trained Bottleneck!
 
-**R**Whenever working on data science projects, it’s always a good practice to share some ideas on how the model performance could be improved by commenting on the dataset or the algorithms that you used.
+It´s kind of the discussion at **health medications** development:
+
+>- in one hand you have the **specificity** factor that tells you: "it may **not** be a good idea to use a pre-trained Bottleneck, trained on **Humans** to create kind of a Perceptron for **Dogs**, so why not goes on the "right" way and create your own Perceptron from zero? Why? Just because a pre-trained Bottleneck is a kind of a huge **dinossaur**. Really functional and "tested" along kind of **60 Million** years, and very, very energetically efficient on a particular environment. So, theoretically, you may **not** use for **cancer** treatment to use a drug specifically developed for example, for curing headaches
+>- in the other hand you have the **variability** factor that thells you: "what is the **range** of possibilities that a good (and already tested) drug could deal with other diseases? Is kind of, by some reason, some dinossaurs evolve to a new kind of flying birdy shape: how they could explore a new in-change environment, and what is their new potential for **mutation** (or creating new variations of birds), just to re-collonize a planet affected by, just suppose, a meteor impact?
+
+*(*a good discussion about these concepts appear at the last chapter of the book "The Structure of Evolutionary Theory", by Stephen Jay-Gould, when he discusses his **Punctuated Equilibrium** hypothesis)*
+
+And now, how can 
 
 ---
 
-**IV. Implementation**
+**IV. About the Software Implementation**
 
 This project is structured by Functions. Each function takes some parameters and returns some results. The guiding line for creating functions in such way was to follow the **Functional Programming** paradigm when it was possible.
 
