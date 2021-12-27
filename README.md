@@ -177,16 +177,9 @@ On the side of humans, what we have:
 
 So, it´s a kind of a so **disproportional** condition, that whe cannot **never** expect a good performance for **breed identification**, training with **so few images**
 
-**R** Features and calculated statistics relevant to the problem have been reported and discussed related to the dataset, and a thorough description of the input space or input data has been made. Abnormalities or characteristics about the data or input that need to be addressed have been identified.
-
-**R** You can report the number of images present in the dataset that you have received.
-
-**R** It would be a good idea to show some of the sample images present in your dataset along with name of the breed available as label for training machine learning model.
-
-**R** You may also report through table or graph about how many number of samples of each breed type you have received in your dataset.
+A complete **Data Analysis** is at this Notebook [here](https://github.com/epasseto/UdacityDataScienceCapstone/blob/main/dog_breed_analysis.ipynb
 
 ---
-
 
 **About the Dog Dataset**
 
@@ -216,7 +209,29 @@ So, basically we are training a Dog Breed Perceptron over an unbalanced data. As
 
 The functions and code used to provide all this information where developed my me, and are provided in the notebook cited above.
 
-A specific discussion about **Metrics** is provided later, in this document.
+A specific discussion about **Metrics** is provided later.
+
+---
+
+And let me see if this **dog** images are compatible with their labels...
+
+Here says "Boxer", and it looks like a Boxer:
+
+![Boxer1](figs/boxer1.png)
+
+Here says "Boxer", and it looks like at the label says:
+
+![Boxer2](figs/boxer2.png)
+
+Now it says "Akita", and it looks OK:
+
+![Akita1](figs/akita1.png)
+
+Finally, it says "Akita", and it looks an Akita:
+
+![Akita2](figs/akita2.png)
+
+*(One comment: you can se some **humans** in this picture, and this is not so well... The Perceptron will be trained for **human** features too! The best way is to **remove** this guys over there from the picture!)*
 
 ---
 
@@ -240,6 +255,24 @@ And that is what our **Counting** distribution shows, in another way, so we can 
 ![project statement](figs/human_count2.png)
 
 *(\*these guys, counting “21”, then “23”… and so on until “530” cannot be represented by a bar, as they are only **unary** – one individual value.)*
+
+---
+
+Let me make some exploration on **Labels** for the **Human** dataset too...
+
+These two are saying "Margaret Thatcher" and they really look like the **Human** that they desbribe:
+
+![Human1](figs/human1.png)
+
+![Human2](figs/human2.png)
+
+And these two are about **Human** and I can cleary recognize them as Human faces too:
+
+![Human3](figs/human3.png)
+
+![Human4](figs/human4.png)
+
+So, the **Human** samples looks manually nice!
 
 ---
 
