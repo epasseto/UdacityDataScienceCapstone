@@ -203,9 +203,7 @@ And visually, our **Counting** distribution tells the same history:
 
 ![project statement](figs/dog_count.png)
 
-So, basically we are training a Dog Breed Perceptron over an unbalanced data. As the main metric that we choose was **Accuracy** for **Testing** dataset, this biased training reflects also into our metrics, as this article from Towards Data Science indicates, about metrics, specially Accuracy:
-
-([Towards Data Science](https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce))
+So, basically we are training a Dog Breed Perceptron over an unbalanced data. As the main metric that we choose was **Accuracy** for **Testing** dataset, this biased training reflects also into our metrics, as this article from Towards Data Science indicates, about metrics, specially Accuracy, at [Towards Data Science](https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce)
 
 The functions and code used to provide all this information where developed my me, and are provided in the notebook cited above.
 
@@ -532,11 +530,13 @@ I know it is a really small dataset, so we cannot take good conclusions about it
 
 **4. Final Results**
 
+We had taken a Perceptron architecture as a **Paradigm**. The idea was to train it by zero, to identify **dog breeds**. Our fist configuration was as this **orange box**, over here:
+
 ![machines](figs/machine1.png)
 
-**R**The final results are discussed in detail. Explain the exploration as to why some techniques worked better than others, or how improvements were made are documented.
+And then we took as result kind of **16%** of Accuracy. It was not a big deal. The strategy is to take in account good results from the past (as using **Kernels** not so small, as 2x2 and like, 4x4, that demonstrated to be a good size for this project.
 
-One idea is to use the ancient **Roman Empire** strategy, that is: "first **occupy**, then **reinforce**!"
+And the gereral idea was to use the ancient **Roman Empire** strategy, that is: "first **occupy**, then **reinforce**!"
 
 Jo, just imagine that this **orange box** over here is our already conceived first Perceptron architecture:
 
@@ -566,14 +566,6 @@ The complement to the predefined **Bottleneck** is:
 >- one **Pooling 2D** with a pool size and a padding parameters settings
 >- a **GAP** for a drastical dimentionality reduction and finally
 >- a **Output** with the 133 categories and an end activation function
-
-**R**It’s essential to show best scores achieved by each model in one place in a table.
-
-**R**It’s valuable to report model’s performance metric for all the class types  that can be generated as output.
-
-**R**You could have also generated a confusion matrix to check between which two breed pairs the algorithm is most likely to get confused and make classification error. That 
-
-**R**revelation can be followed by collecting more samples of those two classes for training the model.
 
 ---
 
@@ -613,23 +605,21 @@ Other parameters that we can modify:
 >- **Bottlenecks** → each Bottleneck has it own architecture and may be trained with different data. We started with **ResNet-50** and then tried some of our tests on  **Inception V3**. The differences were not so great, and **ResNet-50** offered better results;
 
 For the **Convolutional Layer**:
->- **Number of Filters** → **32** **64**
->- **Kernel Size** → **4**
->-**Pool Size** → **4**
->- **Padding** → **same** **valid**
->- **Stride** → **2**
->- **Activation Function** → ReLU
->- **Final Activation Function** → **Sigmoid ** **Softmax**
+>- **Number of Filters** → I tryied **32** and **64** filters and the changes were not so significative. It is not a good idea to just try to correct a **bad model** just adding more filers. They will not have, at the end a significative explanatory value 
+>- **Kernel Size** → **2** and **4**, the best one was using **4x4** kernels. In my conception, a too-small kernel cannot identify really well **fundamental patterns** (for example for dog hair, or teeth 
+>- **Pool Size** → I adopted the same **4** value as the best for our model. In future, I can change it
+>- **Padding** → and **same** or **valid** didn´t changed a lot the results. I thing the dogs were all well centered in the image, so for the borders, nothing so significative was retained by our filters to make a better recognizion. So, it was not a big deal, as I expected, to change this value
+>- **Stride** → why I tried just by **2**? In my conception, it is enough to take samples turning the **border** of one kernel, as the **center** of the next one. It is only a matter of geolmetry
+>- **Activation Function** → **ReLU** was used, as it is really fast. In future, I plan to try other ones. The idea is just to turn to **zero** negative values and return as the same, the positive ones. Sometimes a minimalist approach is enough  
+>- **Final Activation Function** → I tried **Sigmoid** and **Softmax**, expecting much better results with **Softmax**, as it is not so drastical in the decaying of the curve. The results proved that both  could be really useful
 
 And about **Training Time**:
->-
+>- it **don´t** seems to change so much, under the range of values we tested for
+>- as it is crucial only when we are **training** the model it is not decisive for choosing the best parameters 
 
 About **Accuracy**:
->-
-
-**R**Student adequately summarizes the end-to-end problem solution and discusses one or two particular aspects of the project they found interesting or difficult.
-
-**R**It’s a good practice to provide summary of end to end analysis that you performed and the main things that you learnt while working on this project as insights that others can benefit from.
+>- I have something to tell about Accuracy. When we test a model for **Dog Breeds** and then use it for **Humans**, it is really impossible to say how it is working. I could take some friends pics, for example, and say if they agree with their more likely **Dog Breed** classification. But, OK, it is more for **fun** than for a useful task
+>- for the other Perceptrons, well, it is **one** criteria for evaluation. The best thing to do is then just keep trying other **metrics** for evaluating what we are doing
 
 ---
 
