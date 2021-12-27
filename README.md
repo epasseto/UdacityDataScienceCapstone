@@ -177,7 +177,7 @@ On the side of humans, what we have:
 
 So, it´s a kind of a so **disproportional** condition, that whe cannot **never** expect a good performance for **breed identification**, training with **so few images**
 
-A complete **Data Analysis** is at this Notebook [here](https://github.com/epasseto/UdacityDataScienceCapstone/blob/main/dog_breed_analysis.ipynb
+A complete **Data Analysis** is at this Notebook [here](https://github.com/epasseto/UdacityDataScienceCapstone/blob/main/dog_breed_analysis.ipynb)
 
 ---
 
