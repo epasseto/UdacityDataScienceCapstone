@@ -632,7 +632,23 @@ It´s kind of the discussion at **health medications** development:
 
 *(*a good discussion about these concepts appear at the last chapter of the book "The Structure of Evolutionary Theory", by Stephen Jay-Gould, when he discusses his **Punctuated Equilibrium** hypothesis)*
 
-And now, how can 
+And now, how can make the **next steps** on evolving this Perceptron?
+
+**First** we can try other Bottlenecks, as **VGG-19** or **Xception**, that were not tested in this implementation.
+
+>- even **other** Bottlenecks can be found at Internet. A good reference is [Towards Data Science](https://towardsdatascience.com/creating-deeper-bottleneck-resnet-from-scratch-using-tensorflow-93e11ff7eb02)
+>- keep improving and testing **parameters**, specially trying more than **20 Epochs** (it can be really slow to Train) and **Loss Function**. A good reference is [Machine Learning Mastery](https://machinelearningmastery.com/loss-and-loss-functions-for-training-deep-learning-neural-networks/). Mr. Jason, from Australia also have some cool books (some for free, others for selling)
+>- gather more labelled data about dogs, with their respective **breeds**. It is not a easy job, as some breeds may be **missclassified** and others needs some work on it (containing "dirty" objects, as humans, cars, cats, etc..)
+>- invest more time on **Image Preprocessing**. In this project, I created two functions, one for compressing pictures, simulating the distortion effect produced by compressing a 4x3 (like SVGA) into a **square** (for testing if the Perceptron Accuracy decayed) and another one for **correcting** it
+
+Specially about **Preprocessing**:
+
+>- by previous experiences, personally I **strongly recommend** to invest time in that area. I could improve **a lot** other kinds of Machine Learning artifacts, just making a better job on this field
+>- if you can detect what type of **camera lenses** are more usual for taking the pictures, you can apply a **pre-filter** for elliminationg the **lens distortion**. This can be useful for better interpretations
+>- improving the **resolution** of some pictures, using **interpolation algorithms**. In other cases, to apply some **blur** may produce better results. Sometimes, the excessive **sharpness** introduces noise to the patterns we want to recognize
+>- improve the **gamma** of our image. Suppose for example, a RGB image, turned into Black & White. Then you transform the [0, 255] range into [0, 1] range for each pixel. But in some cases this is **not enough**. Sometimes our image is compressed, just suppose, into a spectrum varying between [0, 0.45] - a very **dark** image. Other times [0.60, 1.0] - a very **white** image. Using some algorithms, we can **decompress** these images to [0, 1] range. And it could be tested if our Perceptron trains better in this way, or not.
+
+As a **final word**, I could say that the **best practice** in the case of Perceptrons seems to keep in **constant evolution**. So, when some new technique is annonced, just to try to test if in your case, it can improve the quality of your own work, or not.
 
 ---
 
